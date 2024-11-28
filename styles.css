@@ -59,8 +59,8 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     transition: background-color 0.2s ease, color 0.2s ease;
-    padding: 5px 10px;
-    border-radius: 20px;
+    padding: 30px 10px;
+    border-radius: 9px;
     letter-spacing: 2px; /* Add spacing between the letters */
 }
 
@@ -83,7 +83,7 @@ body {
     align-items: center;
     background-color: transparent;
     border: 1px solid transparent;
-    border-radius: 20px;
+    border-radius: 9px;
     transition: all 0.3s ease;
     width: 40px; /* Start with the width of the button */
 }
@@ -128,13 +128,13 @@ body {
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     position: relative;
     padding-left: 15px; /* Add space for the icon */
-    border-radius: 20px;
+    border-radius: 9px;
 }
 
 /* Expanding Search Bar on Focus */
 .search:focus-within {
     width: 200px; /* Expand the search bar when input is focused */
-    border-radius: 20px;
+    border-radius: 9px;
 }
 
 .search:focus-within .search-input {
@@ -149,7 +149,7 @@ body {
     background-color: #ff4655;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 9px;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
