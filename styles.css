@@ -75,7 +75,7 @@ body {
     gap: 15px;
 }
 
-/* Search Box */
+/* Search Bar Styles */
 .search {
     position: relative;
     display: flex;
@@ -85,6 +85,7 @@ body {
     border-radius: 4px;
     overflow: hidden;
     transition: all 0.3s ease;
+    width: 40px; /* Start with the size of the button */
 }
 
 /* Search Button */
@@ -92,15 +93,17 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0 10px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40px; /* Match the search icon button size */
+    height: 40px;
 }
 
 .search-btn i {
     color: #fff;
-    font-size: 16px;
+    font-size: 20px; /* Adjust icon size */
     transition: color 0.3s ease;
 }
 
@@ -121,19 +124,24 @@ body {
     transform: scaleX(0);
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding-left: 40px; /* Ensure padding so the text doesn't overlap with the icon */
 }
 
-/* Expanding Search Bar on Input Focus */
+/* Expanding Search Bar on Focus */
 .search:focus-within {
-    background-color: #222;
-    border: 1px solid #444;
+    width: 200px; /* Expand container when the input field is focused */
 }
 
 .search:focus-within .search-input {
-    width: 150px;
+    width: 150px; /* Set the final width of the search bar */
     opacity: 1;
     transform: scaleX(1);
 }
+
 
 /* Call-to-Action Button */
 .btn {
