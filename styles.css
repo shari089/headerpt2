@@ -114,6 +114,17 @@ body {
     filter: brightness(0) invert(0.7); /* Dim on hover */
 }
 
+/* Adjust FontAwesome Icon in the Search Button */
+.search-btn i {
+    color: #fff; /* Default white color */
+    font-size: 16px; /* Icon size */
+    transition: color 0.3s ease;
+}
+
+.search-btn:hover i {
+    color: #ff4655; /* Valorant red accent on hover */
+}
+
 /* Call-to-Action Button */
 .btn {
     text-decoration: none;
