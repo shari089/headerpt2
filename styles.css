@@ -35,7 +35,7 @@ body {
 
 /* Logo */
 .logo img {
-    height: 40px;
+    height: 60px;
 }
 
 /* Navigation */
@@ -48,14 +48,14 @@ body {
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 /* Navigation Hover Effect */
 .nav-list a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
     transition: background-color 0.3s ease, color 0.3s ease;
