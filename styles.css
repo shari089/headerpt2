@@ -42,16 +42,16 @@ body {
 .nav {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align links to the left */
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 40px; /* Increase the gap between the nav links */
 }
 
-/* Navigation Hover Effect */
+/* Navigation Links */
 .nav-list a {
     text-decoration: none;
     color: #fff;
@@ -59,13 +59,14 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     transition: background-color 0.2s ease, color 0.2s ease;
-    padding: 5px 10px; /* Add padding for the rounded background effect */
-    border-radius: 7px; /* Make the background rounded */
+    padding: 5px 10px;
+    border-radius: 7px;
+    letter-spacing: 2px; /* Add spacing between the letters */
 }
 
 .nav-list a:hover {
-    background-color: #222; /* Dark grey background */
-    color: #ff4655; /* Valorant's red accent */
+    background-color: #222;
+    color: #ff4655;
 }
 
 /* Actions: Search and Button */
