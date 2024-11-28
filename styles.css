@@ -48,7 +48,7 @@ body {
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 40px; /* Increase the gap between the nav links */
+    gap: 30px; /* Increase the gap between the nav links */
 }
 
 /* Navigation Links */
@@ -60,7 +60,7 @@ body {
     text-transform: uppercase;
     transition: background-color 0.2s ease, color 0.2s ease;
     padding: 5px 10px;
-    border-radius: 7px;
+    border-radius: 20px;
     letter-spacing: 2px; /* Add spacing between the letters */
 }
 
