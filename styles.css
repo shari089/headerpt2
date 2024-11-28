@@ -84,11 +84,10 @@ body {
     border: 1px solid transparent;
     border-radius: 4px;
     overflow: hidden;
-    transition: all 0.3s ease;
     width: 40px; /* Start with the size of the button */
 }
 
-/* Search Button */
+/* Search Button (Magnifying Glass) */
 .search-btn {
     background: none;
     border: none;
@@ -103,7 +102,7 @@ body {
 
 .search-btn i {
     color: #fff;
-    font-size: 20px; /* Adjust icon size */
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
@@ -122,13 +121,34 @@ body {
     width: 0;
     opacity: 0;
     transform: scaleX(0);
-    transition: width 0.6s ease, opacity 0.3s ease, transform 0.3s ease;
+    transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     white-space: nowrap;
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     padding-left: 40px; /* Ensure padding so the text doesn't overlap with the icon */
+}
+
+/* Close Button (X) */
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.close-btn i {
+    font-size: 16px;
+}
+
+.search:focus-within .close-btn {
+    display: block; /* Show close button when input is focused */
 }
 
 /* Expanding Search Bar on Focus */
