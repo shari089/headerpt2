@@ -1,0 +1,74 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #000; /* Black background to match Valorant's theme */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
+}
+
+/* Navigation */
+.nav {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff; /* White text for contrast */
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ff4655; /* Valorant's red accent color */
+}
+
+/* Call-to-Action */
+.cta .btn {
+    text-decoration: none;
+    background-color: #ff4655;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+    background-color: #e03e4e;
+}
