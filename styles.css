@@ -93,7 +93,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,13 +127,14 @@ body {
     transform: scaleX(0); /* Initially scale to 0 */
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     position: relative;
-    padding-left: 40px; /* Add space for the icon */
+    padding-left: 15px; /* Add space for the icon */
     border-radius: 20px;
 }
 
 /* Expanding Search Bar on Focus */
 .search:focus-within {
     width: 200px; /* Expand the search bar when input is focused */
+    border-radius: 20px;
 }
 
 .search:focus-within .search-input {
