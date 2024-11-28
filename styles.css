@@ -66,7 +66,6 @@ body {
 .nav-list a:hover {
     background-color: #222; /* Dark grey background */
     color: #ff4655; /* Valorant's red accent */
-    border-bottom: 3px solid #ff4655; /* Valorant red underline effect */
 }
 
 /* Actions: Search and Button */
