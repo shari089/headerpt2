@@ -77,51 +77,62 @@ body {
 
 /* Search Box */
 .search {
+    position: relative;
     display: flex;
     align-items: center;
-    background-color: #222;
-    border: 1px solid #444;
+    background-color: transparent;
+    border: 1px solid transparent;
     border-radius: 4px;
-    padding: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
-.search-input {
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    padding: 5px;
-    outline: none;
-    width: 150px;
-}
-
+/* Search Button */
 .search-btn {
     background: none;
     border: none;
-    padding: 0;
     cursor: pointer;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.search-btn img {
-    width: 16px;
-    height: 16px;
-    filter: brightness(0) invert(1); /* White icon */
-    transition: filter 0.3s ease;
-}
-
-.search-btn:hover img {
-    filter: brightness(0) invert(0.7); /* Dim on hover */
-}
-
-/* Adjust FontAwesome Icon in the Search Button */
 .search-btn i {
-    color: #fff; /* Default white color */
-    font-size: 16px; /* Icon size */
+    color: #fff;
+    font-size: 16px;
     transition: color 0.3s ease;
 }
 
 .search-btn:hover i {
-    color: #ff4655; /* Valorant red accent on hover */
+    color: #ff4655; /* Valorant red accent */
+}
+
+/* Search Input */
+.search-input {
+    background: #222;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    outline: none;
+    width: 0;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+}
+
+/* Expanding Search Bar on Input Focus */
+.search:focus-within {
+    background-color: #222;
+    border: 1px solid #444;
+}
+
+.search:focus-within .search-input {
+    width: 150px;
+    opacity: 1;
+    transform: scaleX(1);
 }
 
 /* Call-to-Action Button */
