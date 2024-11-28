@@ -22,7 +22,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #ff4655; /* Valorant red underline effect */
 }
 
 .container {
@@ -67,6 +66,7 @@ body {
 .nav-list a:hover {
     background-color: #222; /* Dark grey background */
     color: #ff4655; /* Valorant's red accent */
+    border-bottom: 3px solid #ff4655; /* Valorant red underline effect */
 }
 
 /* Actions: Search and Button */
