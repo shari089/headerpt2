@@ -83,8 +83,8 @@ body {
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 4px;
-    overflow: hidden;
-    width: 40px; /* Start with the size of the button */
+    transition: all 0.3s ease;
+    width: 40px; /* Start with the width of the button */
 }
 
 /* Search Button (Magnifying Glass) */
@@ -98,11 +98,14 @@ body {
     justify-content: center;
     width: 40px; /* Match the search icon button size */
     height: 40px;
+    position: absolute;
+    left: 0; /* Position it at the far left of the container */
+    z-index: 10; /* Ensure the button is on top */
 }
 
 .search-btn i {
     color: #fff;
-    font-size: 20px;
+    font-size: 20px; /* Adjust icon size */
     transition: color 0.3s ease;
 }
 
@@ -118,50 +121,24 @@ body {
     font-size: 14px;
     padding: 5px 10px;
     outline: none;
-    width: 0;
-    opacity: 0;
-    transform: scaleX(0);
+    width: 0; /* Initially set width to 0 */
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: scaleX(0); /* Initially scale to 0 */
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-    white-space: nowrap;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    padding-left: 40px; /* Ensure padding so the text doesn't overlap with the icon */
-}
-
-/* Close Button (X) */
-.close-btn {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-}
-
-.close-btn i {
-    font-size: 16px;
-}
-
-.search:focus-within .close-btn {
-    display: block; /* Show close button when input is focused */
+    position: relative;
+    padding-left: 40px; /* Add space for the icon */
 }
 
 /* Expanding Search Bar on Focus */
 .search:focus-within {
-    width: 200px; /* Expand container when the input field is focused */
+    width: 200px; /* Expand the search bar when input is focused */
 }
 
 .search:focus-within .search-input {
-    width: 150px; /* Set the final width of the search bar */
+    width: 150px; /* Set the width of the input when expanded */
     opacity: 1;
     transform: scaleX(1);
 }
-
 
 /* Call-to-Action Button */
 .btn {
