@@ -72,7 +72,7 @@ body {
 .actions {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 /* Search Bar Styles */
@@ -82,7 +82,7 @@ body {
     align-items: center;
     background-color: transparent;
     border: 1px solid transparent;
-    border-radius: 7px;
+    border-radius: 20px;
     transition: all 0.3s ease;
     width: 40px; /* Start with the width of the button */
 }
@@ -127,6 +127,7 @@ body {
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     position: relative;
     padding-left: 40px; /* Add space for the icon */
+    border-radius: 20px;
 }
 
 /* Expanding Search Bar on Focus */
