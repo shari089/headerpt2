@@ -52,16 +52,20 @@ body {
     gap: 20px;
 }
 
+/* Navigation Hover Effect */
 .nav-list a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 5px 10px; /* Add padding for the rounded background effect */
+    border-radius: 4px; /* Make the background rounded */
 }
 
 .nav-list a:hover {
+    background-color: #222; /* Dark grey background */
     color: #ff4655; /* Valorant's red accent */
 }
 
