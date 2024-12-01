@@ -1,17 +1,9 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Exo 2', sans-serif;
-    background-color: #121212; /* Match Valorant's dark background */
-    color: #fff;
-}
-
-/* Header Styles */
 .header {
     position: fixed;
     top: 0;
@@ -33,25 +25,22 @@ body {
     margin: 0 auto;
 }
 
-/* Logo */
 .logo img {
     height: 55px;
 }
 
-/* Navigation */
 .nav {
     flex-grow: 1;
     display: flex;
-    justify-content: flex-start; /* Align links to the left */
+    justify-content: flex-start; 
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 30px; /* Increase the gap between the nav links */
+    gap: 30px; 
 }
 
-/* Navigation Links */
 .nav-list a {
     text-decoration: none;
     color: #fff;
@@ -61,7 +50,7 @@ body {
     transition: background-color 0.2s ease, color 0.2s ease;
     padding: 5px 10px;
     border-radius: 9px;
-    letter-spacing: 2px; /* Add spacing between the letters */
+    letter-spacing: 2px; 
 }
 
 .nav-list a:hover {
@@ -69,14 +58,12 @@ body {
     color: #ff4655;
 }
 
-/* Actions: Search and Button */
 .actions {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* Search Bar Styles */
 .search {
     position: relative;
     display: flex;
@@ -85,11 +72,10 @@ body {
     border: 1px solid transparent;
     border-radius: 9px;
     transition: all 0.3s ease;
-    width: 40px; /* Start with the width of the button */
+    width: 40px; 
     height: 10px;
 }
 
-/* Search Button (Magnifying Glass) */
 .search-btn {
     background: none;
     border: none;
@@ -98,24 +84,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* Match the search icon button size */
+    width: 40px;
     height: 40px;
     position: absolute;
-    left: 0; /* Position it at the far left of the container */
-    z-index: 10; /* Ensure the button is on top */
+    left: 0;
+    z-index: 10; 
 }
 
 .search-btn i {
     color: #fff;
-    font-size: 20px; /* Adjust icon size */
+    font-size: 20px; 
     transition: color 0.3s ease;
 }
 
 .search-btn:hover i {
-    color: #ff4655; /* Valorant red accent */
+    color: #ff4655; 
 }
 
-/* Search Input */
 .search-input {
     background: #222;
     border: none;
@@ -123,28 +108,26 @@ body {
     font-size: 16px;
     padding: 5px 10px;
     outline: none;
-    width: 0; /* Initially set width to 0 */
-    opacity: 0; /* Initially set opacity to 0 */
-    transform: scaleX(0); /* Initially scale to 0 */
+    width: 0; 
+    opacity: 0; 
+    transform: scaleX(0);
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     position: relative;
-    padding-left: 15px; /* Add space for the icon */
+    padding-left: 15px;
     border-radius: 9px;
 }
 
-/* Expanding Search Bar on Focus */
 .search:focus-within {
-    width: 200px; /* Expand the search bar when input is focused */
+    width: 200px;
     border-radius: 9px;
 }
 
 .search:focus-within .search-input {
-    width: 150px; /* Set the width of the input when expanded */
+    width: 150px;
     opacity: 1;
     transform: scaleX(1);
 }
 
-/* Call-to-Action Button */
 .btn {
     text-decoration: none;
     background-color: #ff4655;
