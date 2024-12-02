@@ -30,14 +30,10 @@
     height: 55px;
 }
 
-.website-name {
-
-}
-
 .nav {
+    flex-grow: 1;
     display: flex;
-    justify-content: flex-start;
-    flex-grow: 1;  /* Allow this to take up remaining space */
+    justify-content: flex-start; 
 }
 
 .nav-list {
@@ -54,6 +50,7 @@
     font-weight: 700;
     font-family: 'Exo 2', sans-serif !important;
     text-transform: uppercase;
+    padding: 5px 10px;
     padding: 10px 10px;
     border-radius: 9px;
     letter-spacing: 2px;
@@ -67,6 +64,7 @@
     left: 0;
     bottom: 0;
     width: 0;
+    height: 2px;
     height: 3px;
     background-color: #ff4655;
     transition: width 0.3s ease;
@@ -99,7 +97,6 @@
     width: 40px;
     height: 40px;
     overflow: hidden;
-    margin-left: auto; /* Keep the search bar on the right */
 }
 
 .search:focus-within {
@@ -155,6 +152,7 @@
 .btn {
     text-decoration: none;
     background-color: #ff4655;
+    background: #ff4655;
     color: #fff;
     padding: 10px 20px;
     border-radius: 9px;
@@ -166,5 +164,6 @@
 }
 
 .btn:hover {
+    transition: opacity 0.3s ease;
     cursor: pointer;
 }
