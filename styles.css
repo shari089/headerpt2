@@ -18,7 +18,7 @@
 }
 
 .logo {
-    margin-right: 20px;
+    margin-right: 20px; /* Ensure some spacing between the logo and nav */
 }
 
 .logo img {
@@ -27,9 +27,9 @@
 
 .nav {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start; /* Align navigation to the left */
     align-items: center;
-    flex-grow: 1; 
+    flex-grow: 1; /* Take up all available space */
 }
 
 .nav-list {
@@ -60,3 +60,5 @@
     align-items: center;
     gap: 10px;
 }
+
+/* Search styles remain the same */
