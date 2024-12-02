@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -6,19 +12,17 @@
     padding: 10px 20px;
     z-index: 1000;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.logo {
-    margin-right: 20px; /* Ensure some spacing between the logo and nav */
 }
 
 .logo img {
@@ -26,16 +30,16 @@
 }
 
 .nav {
+    flex-grow: 1;
     display: flex;
-    justify-content: flex-start; /* Align navigation to the left */
-    align-items: center;
-    flex-grow: 1; /* Take up all available space */
+    justify-content: flex-start; 
 }
 
 .nav-list {
     list-style: none;
     display: flex;
     gap: 30px;
+    padding-left: 15px;
 }
 
 .nav-list a {
@@ -45,6 +49,7 @@
     font-weight: 700;
     text-transform: uppercase;
     transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 5px 10px;
     padding: 10px 10px;
     border-radius: 9px;
     letter-spacing: 2px; 
@@ -61,4 +66,82 @@
     gap: 10px;
 }
 
-/* Search styles remain the same */
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    transition: all 0.3s ease;
+    width: 40px; 
+    height: 10px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    z-index: 10; 
+}
+
+.search-btn i {
+    color: #fff;
+    font-size: 20px; 
+    transition: color 0.3s ease;
+}
+
+.search-btn:hover i {
+    color: #ff4655; 
+}
+
+.search-input {
+    background: #222;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    outline: none;
+    width: 0; 
+    opacity: 0; 
+    transform: scaleX(0);
+    transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    position: relative;
+    padding-left: 15px;
+    border-radius: 9px;
+}
+
+.search:focus-within {
+    width: 200px;
+    border-radius: 9px;
+}
+
+.search:focus-within .search-input {
+    width: 150px;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #ff4655;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e03e4e;
+}
