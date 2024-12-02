@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .header {
@@ -30,10 +30,6 @@
     height: 55px;
 }
 
-.website-name {
-
-}
-
 .nav {
     flex-grow: 1;
     display: flex;
@@ -52,10 +48,9 @@
     color: #fff;
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
-    padding: 5px 10px;
-    padding: 10px 10px;
+    padding: 10px 10px; /* Corrected padding */
     border-radius: 9px;
     letter-spacing: 2px;
     position: relative; 
@@ -153,13 +148,13 @@
 
 .btn {
     text-decoration: none;
-    background-image: linear-gradient(to right, #ff4655, #DC143C);
+    background-color: #ff4655;
     color: #fff;
     padding: 10px 20px;
     border-radius: 9px;
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Exo 2', sans-serif !important;
+    font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
     transition: background-color 0.3s ease, opacity 0.3s ease;
     display: inline-block;
@@ -168,5 +163,5 @@
 .btn:hover {
     cursor: pointer;
     opacity: 0.8;
-    background-image: linear-gradient(to right, #ff4655, #DC143C);
+    background-color: #ff4655;
 }
