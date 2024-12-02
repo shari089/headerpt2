@@ -157,8 +157,8 @@
     font-weight: 700;
     text-transform: uppercase;
     padding: 10px 20px;
-    font-weight: 700;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
+    position: relative;
 }
 
 .btn::after {
