@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo 2', sans-serif !important;
 }
 
 .header {
@@ -30,6 +30,10 @@
     height: 55px;
 }
 
+.website-name {
+
+}
+
 .nav {
     flex-grow: 1;
     display: flex;
@@ -48,9 +52,10 @@
     color: #fff;
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo 2', sans-serif !important;
     text-transform: uppercase;
-    padding: 10px 10px; /* Corrected padding */
+    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 9px;
     letter-spacing: 2px;
     position: relative; 
@@ -63,6 +68,7 @@
     left: 0;
     bottom: 0;
     width: 0;
+    height: 2px;
     height: 3px;
     background-color: #ff4655;
     transition: width 0.3s ease;
@@ -82,7 +88,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    justify-content: flex-end; /* Ensure the action buttons align properly */
 }
 
 .search {
@@ -115,6 +120,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 .search-btn i {
@@ -150,19 +156,18 @@
 .btn {
     text-decoration: none;
     background-color: #ff4655;
+    background: #ff4655;
     color: #fff;
     padding: 10px 20px;
     border-radius: 9px;
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo 2', sans-serif !important;
     text-transform: uppercase;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
-    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
+    transition: opacity 0.3s ease;
     cursor: pointer;
-    opacity: 0.8;
-    background-color: #ff4655;
 }
