@@ -87,6 +87,8 @@
 
 .search {
     position: relative;
+    display: flex;
+    align-items: center;
     background-color: #222;
     border: 1px solid transparent;
     border-radius: 9px;
@@ -102,12 +104,19 @@
 }
 
 .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    left: 5px; 
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
     z-index: 1;
 }
 
@@ -131,7 +140,7 @@
     opacity: 0;
     transform: scaleX(0);
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-    padding: 5px 10px 5px 50px;
+    padding: 5px 10px 5px 40px; 
     border-radius: 9px;
 }
 
