@@ -142,12 +142,35 @@
     transition: background-color 0.3s ease;
 }
 
-.btn:active {
-    color: #ff4655;
-    background: white;
-}
-
 .btn:hover {
     background-color: #e03e4e;
 }
-    
+
+.subscribe-checkbox {
+    display: none; /* Hides the checkbox */
+}
+
+.subscribe-toggle .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff4655;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.subscribe-checkbox:checked + .btn {
+    content: "Subscribed";
+    background-color: #e03e4e;
+    color: #fff;
+}
+
+.subscribe-checkbox:checked + .btn::after {
+    content: "Subscribed";
+}
