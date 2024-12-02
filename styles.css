@@ -160,23 +160,9 @@
     position: relative;
 }
 
-.btn::after {
-    content: ""; 
-    position: absolute;
-    left: 0;
-    bottom: -2px; 
-    width: 0;
-    height: 3px; 
-    background-color: #ff4655;
-    transition: width 0.3s ease;
-    border-radius: 5px;
-}
-
-.btn:hover::after {
-    width: 100%; 
-    background-color: #ff4655;
-}
-
 .btn:hover {
+    background-color: #fff;
     color: #ff4655;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
