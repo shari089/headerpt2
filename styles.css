@@ -137,7 +137,7 @@
 
 .btn {
     text-decoration: none;
-    background-image: linear-gradient(to right, red, orange);
+    background-image: linear-gradient(to right, #ff4655, #FF7F50);
     color: #fff;
     padding: 10px 20px;
     border-radius: 9px;
@@ -149,6 +149,6 @@
 }
 
 .btn:hover {
-    background-image: linear-gradient(red, orange);
+    background-image: linear-gradient(#ff4655, #FF7F50);
     cursor: pointer;
 }
