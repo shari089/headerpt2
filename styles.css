@@ -145,3 +145,9 @@
 .btn:hover {
     background-color: #e03e4e;
 }
+
+.btn:active {
+    color: #ff4655;
+    background: white;
+}
+    
