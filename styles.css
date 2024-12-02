@@ -33,7 +33,6 @@
     flex-grow: 1;
     display: flex;
     justify-content: flex-start; 
-    align-items: center; /* Ensure vertical alignment */
 }
 
 .nav-list {
