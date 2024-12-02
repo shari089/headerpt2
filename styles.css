@@ -152,14 +152,14 @@
 }
 
 .btn {
-text-decoration: none;
-color: #fff;
-padding: 10px 20px;
-border-radius: 9px;
-font-size: 16px;
-font-weight: 700;
-text-transform: uppercase;
-transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
 .btn::after {
