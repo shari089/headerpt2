@@ -77,22 +77,22 @@
     background-color: #222;
     border: 1px solid transparent;
     border-radius: 9px;
-    width: 200px; /* Fixed width */
-    height: 40px; /* Fixed height */
+    width: 200px; 
+    height: 40px; 
     overflow: hidden;
 }
 
 .search-btn {
     background: #222;
-    border: none;
+    border-radius: 9px;
     cursor: pointer;
     padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
-    height: 100%; /* Matches height of search bar */
-    z-index: 1; /* Ensures it stays above text */
+    height: 100%; 
+    z-index: 1;
 }
 
 .search-btn i {
