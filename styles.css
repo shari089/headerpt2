@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif !important;
 }
 
 .header {
@@ -48,7 +49,6 @@
 
 .nav-list a {
     text-decoration: none;
-    font-family: 'Exo 2', sans-serif !important;
     color: #fff;
     font-size: 16px;
     font-weight: 700;
