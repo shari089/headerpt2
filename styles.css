@@ -47,7 +47,7 @@
 }
 
 .nav-list a {
-    background: linear-gradient(red, white);
+    text-decoration: none;
     font-size: 16px;
     font-weight: 700;
     font-family: 'Exo 2', sans-serif !important;
@@ -61,7 +61,7 @@
 
 .nav-list a:hover {
     background-color: #222;
-    color: #ff4655;
+    background: linear-gradient(#ff4655, white);
 }
 
 .actions {
