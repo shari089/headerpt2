@@ -173,7 +173,7 @@
 }
 
 .btn:hover::after {
-    width: 100%; 
+    width: 80%; 
     background-color: #ff4655;
 }
 
