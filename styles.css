@@ -29,14 +29,10 @@
     height: 55px;
 }
 
-.website-name {
-
-}
-
 .nav {
     flex-grow: 1;
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
 }
 
 .nav-list {
@@ -52,16 +48,20 @@
     font-weight: 700;
     font-family: 'Exo 2', sans-serif !important;
     text-transform: uppercase;
-    transition: background-color 0.2s ease, color 0.2s ease;
-    padding: 5px 10px;
     padding: 10px 10px;
     border-radius: 9px;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
+
+    /* Gradient on text */
+    background: linear-gradient(90deg, #ff4655, #ff7f50);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: color 0.3s ease;
 }
 
 .nav-list a:hover {
-    background-color: #222;
-    background: linear-gradient(#ff4655, white);
+    color: #ff7f50; /* Fallback for hover color */
 }
 
 .actions {
@@ -74,12 +74,12 @@
     position: relative;
     display: flex;
     align-items: center;
-    background-color: transparent;
+    background-color: #222;
     border: 1px solid transparent;
     border-radius: 9px;
-    transition: all 0.3s ease;
-    width: 40px; 
-    height: 10px;
+    width: 200px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    overflow: hidden;
 }
 
 .search-btn {
@@ -91,53 +91,33 @@
     align-items: center;
     justify-content: center;
     width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    z-index: 10; 
+    height: 100%; /* Matches height of search bar */
+    z-index: 1; /* Ensures it stays above text */
 }
 
 .search-btn i {
     color: #fff;
-    font-size: 20px; 
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
 .search-btn:hover i {
-    color: #ff4655; 
+    color: #ff4655;
 }
 
 .search-input {
-    background: #222;
+    background: transparent;
     border: none;
     color: #fff;
     font-size: 18px;
-    padding: 5px 5px;
+    padding: 0 10px;
     outline: none;
-    width: 0; 
-    opacity: 0; 
-    transform: scaleX(0);
-    flex-grow: 1;
-    transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-    position: relative;
-    padding-left: 15px;
-    border-radius: 9px;
-}
-
-.search:focus-within {
-    width: 200px;
-    border-radius: 9px;
-}
-
-.search:focus-within .search-input {
-    width: 150px;
-    opacity: 1;
-    transform: scaleX(1);
+    flex-grow: 1; /* Takes remaining space */
 }
 
 .btn {
     text-decoration: none;
-    background-image: linear-gradient(to right, #ff4655, #FF7F50);
+    background-image: linear-gradient(to right, #ff4655, #ff7f50);
     color: #fff;
     padding: 10px 20px;
     border-radius: 9px;
@@ -149,6 +129,6 @@
 }
 
 .btn:hover {
-    background-image: linear-gradient(#ff4655, #FF7F50);
+    background-image: linear-gradient(#ff7f50, #ff4655);
     cursor: pointer;
 }
