@@ -30,7 +30,7 @@
 }
 
 .nav {
-    flex-grow: 0;
+    flex-grow: 1;
     display: flex;
     justify-content: flex-start; 
 }
@@ -115,6 +115,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 .search-btn i {
