@@ -105,6 +105,7 @@
 
 .search-btn {
     background: none;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     display: flex;
