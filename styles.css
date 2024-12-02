@@ -12,33 +12,32 @@
     background-color: #000;
     padding: 10px 20px;
     z-index: 1000;
-    display: block; /* Removed flex */
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {
-    position: relative;
+    position: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .logo {
-    position: absolute;
-    left: 20px; /* Adjust as needed */
-    top: 50%;
-    transform: translateY(-50%);
+    height: 55px;
 }
 
 .nav {
-    position: absolute;
-    left: 140px; /* Adjust this based on logo size and desired space */
-    top: 50%;
-    transform: translateY(-50%);
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start; 
 }
 
 .nav-list {
     list-style: none;
-    display: inline-block; /* Changed from flex */
+    display: flex;
+    gap: 25px;
     padding-left: 30px;
 }
 
@@ -49,11 +48,10 @@
     font-weight: 700;
     font-family: 'Exo 2', sans-serif !important;
     text-transform: uppercase;
+    transition: color 0.2s ease;
     padding: 10px 10px;
     border-radius: 9px;
     letter-spacing: 2px;
-    position: relative; 
-    transition: color 0.2s ease;
 }
 
 .nav-list a::after {
@@ -68,7 +66,7 @@
     border-radius: 5px;
 }
 
-.nav-list a:hover::after {
+.nav-list a:hover:c:after {
     width: 100%; 
     background-color: #ff4655;
 }
@@ -78,10 +76,10 @@
 }
 
 .actions {
-    position: absolute;
-    right: 20px; /* Adjust as needed */
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    right: 20px
+    align-items: center;
+    gap: 10px;
 }
 
 .search {
