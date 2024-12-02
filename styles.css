@@ -120,14 +120,15 @@
     z-index: 1;
 }
 
-.search-btn i {
-    color: #fff;
-    font-size: 20px;
-    transition: color 0.3s ease;
+.search-btn img {
+    width: 20px; 
+    height: 20px;
+    object-fit: contain;
 }
 
-.search-btn:hover i {
-    color: #ff4655;
+.search-btn:hover img {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(100%) saturate(500%) hue-rotate(346deg) brightness(98%) contrast(100%);
+    transition: color 0.3s ease;
 }
 
 .search-input {
