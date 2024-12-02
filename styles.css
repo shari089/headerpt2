@@ -90,69 +90,6 @@
     gap: 10px;
 }
 
-.search {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #222;
-    border: 1px solid transparent;
-    border-radius: 9px;
-    transition: all 0.3s ease;
-    width: 40px;
-    height: 40px;
-    overflow: hidden;
-}
-
-.search:focus-within {
-    width: 200px;
-    border: 1px solid #ff4655;
-}
-
-.search-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-
-.search-btn i {
-    color: #fff;
-    font-size: 20px;
-    transition: color 0.3s ease;
-}
-
-.search-btn:hover i {
-    color: #ff4655;
-}
-
-.search-input {
-    background: #222;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    outline: none;
-    width: 0;
-    opacity: 0;
-    transform: scaleX(0);
-    transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-    padding: 5px 10px 5px 40px; 
-    border-radius: 9px;
-}
-
-.search:focus-within .search-input {
-    width: 160px;
-    opacity: 1;
-    transform: scaleX(1);
-}
-
 .btn {
     text-decoration: none;
     background-color: #ff4655;
