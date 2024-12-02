@@ -110,27 +110,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 40px; 
+    height: 40px; 
     position: absolute;
     left: 0;
     top: 0;
-    width: 25px;
-    height: 25px;
     z-index: 1;
 }
 
 .search-btn img {
-    width: 20px; 
+    width: 20px;
     height: 20px;
     object-fit: contain;
+    transition: filter 0.3s ease;
 }
 
 .search-btn:hover img {
     filter: brightness(0) saturate(100%) invert(26%) sepia(100%) saturate(500%) hue-rotate(346deg) brightness(98%) contrast(100%);
-    transition: color 0.3s ease;
+    transition: filter 0.3s ease;
 }
-
 .search-input {
     background: #222;
     border: none;
