@@ -38,7 +38,7 @@
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 30px;
     padding-left: 30px;
 }
 
@@ -47,11 +47,14 @@
     color: #fff;
     font-size: 16px;
     font-weight: 700;
+    font-family: 'Exo 2', sans-serif !important;
     text-transform: uppercase;
-    transition: color 0.2s ease;
+    padding: 5px 10px;
     padding: 10px 10px;
     border-radius: 9px;
     letter-spacing: 2px;
+    position: relative; 
+    transition: color 0.2s ease;
 }
 
 .nav-list a::after {
@@ -60,6 +63,7 @@
     left: 0;
     bottom: 0;
     width: 0;
+    height: 2px;
     height: 3px;
     background-color: #ff4655;
     transition: width 0.3s ease;
@@ -74,7 +78,6 @@
 .nav-list a:hover {
     color: #ff4655;
 }
-
 .actions {
     display: flex;
     right: 20px;
