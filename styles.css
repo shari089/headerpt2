@@ -133,7 +133,7 @@
     opacity: 0;
     transform: scaleX(0);
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-    padding: 5px 10px 5px 40px; 
+    padding: 5px 10px 5px 10px; 
     border-radius: 9px;
 }
 
