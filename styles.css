@@ -39,7 +39,7 @@
     list-style: none;
     display: flex;
     gap: 30px;
-    padding-left: 15px;
+    padding-left: 30px;
 }
 
 .nav-list a {
@@ -107,8 +107,8 @@
     background: #222;
     border: none;
     color: #fff;
-    font-size: 16px;
-    padding: 5px 10px;
+    font-size: 18px;
+    padding: 5px 5px;
     outline: none;
     width: 0; 
     opacity: 0; 
