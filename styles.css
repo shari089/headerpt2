@@ -39,7 +39,6 @@
     list-style: none;
     display: flex;
     gap: 30px;
-    padding-left: 30px;
 }
 
 .nav-list a {
@@ -49,8 +48,7 @@
     font-weight: 700;
     font-family: 'Exo 2', sans-serif !important;
     text-transform: uppercase;
-    padding: 5px 10px;
-    padding: 10px 10px;
+    padding: 30px 10px 10px 10px;
     border-radius: 9px;
     letter-spacing: 2px;
     position: relative; 
