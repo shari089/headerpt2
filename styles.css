@@ -126,7 +126,7 @@
 }
 
 .search-btn:hover img {
-    filter: brightness(0) saturate(100%) invert(26%) sepia(100%) saturate(500%) hue-rotate(346deg) brightness(98%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(26%) sepia(100%) saturate(500%) hue-rotate(346deg) brightness(110%) contrast(105%);
     transition: filter 0.3s ease;
 }
 .search-input {
