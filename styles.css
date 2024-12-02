@@ -51,8 +51,6 @@
     padding: 10px 10px;
     border-radius: 9px;
     letter-spacing: 2px;
-
-    /* Gradient on text */
     background: linear-gradient(90deg, #ff4655, #ff7f50);
     color: transparent;
     -webkit-background-clip: text;
@@ -61,7 +59,8 @@
 }
 
 .nav-list a:hover {
-    color: #ff7f50; /* Fallback for hover color */
+    color: #ff7f50;
+    transition: color 0.3s ease;
 }
 
 .actions {
@@ -103,6 +102,7 @@
 
 .search-btn:hover i {
     color: #ff4655;
+    transition: color 0.3s ease;
 }
 
 .search-input {
@@ -131,4 +131,5 @@
 .btn:hover {
     background-image: linear-gradient(#ff7f50, #ff4655);
     cursor: pointer;
+    transition: color 0.3s ease;
 }
