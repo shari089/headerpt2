@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif !important;
 }
 
 .header {
@@ -52,6 +51,7 @@
     color: #fff;
     font-size: 16px;
     font-weight: 700;
+    font-family: 'Exo 2', sans-serif !important;
     text-transform: uppercase;
     transition: background-color 0.2s ease, color 0.2s ease;
     padding: 5px 10px;
@@ -143,6 +143,7 @@
     border-radius: 9px;
     font-size: 16px;
     font-weight: 700;
+    font-family: 'Exo 2', sans-serif !important;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
 }
